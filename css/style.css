@@ -1,0 +1,16 @@
+body {
+    padding-bottom: 500px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.card {
+    width: 250px;
+}
+
+.card-body h6 {
+    font-size: 12px;
+}
+
+#card-banner {
+    width: 600px;
+}
