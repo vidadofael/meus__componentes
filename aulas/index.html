@@ -300,100 +300,217 @@
             
         </div>
         <hr>
-        
-        <!-- slider -->
-        <h1>Slide</h1>
-        <div class="container mb-4">
-            <div class="mb-8">
-                <div id="carousel" class="carousel slide" data-bs-ride="#carousel">
-                    <div class="carousel-indicators">
-                        <button
-                        class="active"
-                        type="button"#
-                        data-bs-target="#carousel"
-                        data-bs-slide-to="0"
-                        aria-current="true"
-                        aria-label="Slide_1"></button>
+    </div>
 
-                        <button
-                        type="button"
-                        data-bs-target="#carousel"
-                        data-bs-slide-to="1"
-                        aria-current="true"
-                        aria-label="Slide_2"></button>
+    <!-- slides -->
+    <h1>Slide</h1>
+    <div class="container mb-4">
+        <div class="mb-8">
+            <div id="carousel" class="carousel slide" data-bs-ride="#carousel">
+                <div class="carousel-indicators">
+                    <button
+                    class="active"
+                    type="button"#
+                    data-bs-target="#carousel"
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide_1"></button>
 
-                        <button
-                        type="button"
-                        data-bs-target="#carousel"
-                        data-bs-slide-to="2"
-                        aria-current="true"
-                        aria-label="Slide_3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img
-                                src="../img/001.jpg"
-                                alt="Descrição 1"
-                                class="d-block w-100"
-                            >
-                            <div class="carousel-caption">
-                                <h4>Primeiro Slide</h4>
-                                <p>alguma descrição</p>
-                            </div>
-                        </div>
+                    <button
+                    type="button"
+                    data-bs-target="#carousel"
+                    data-bs-slide-to="1"
+                    aria-current="true"
+                    aria-label="Slide_2"></button>
 
-                        <div class="carousel-item">
-                            <img
-                                src="../img/002.jpg"
-                                alt="Descrição 2"
-                                class="d-block w-100"
-                            >
-                            <div class="carousel-caption">
-                                <h4>Segundo Slide</h4>
-                                <p>alguma descrição</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <img
-                                src="../img/003.png"
-                                alt="Descrição 3"
-                                class="d-block w-100"
-                            >
-                            <div class="carousel-caption">
-                                <h4>Terceiro Slide</h4>
-                                <p>alguma descrição</p>
-                            </div>
+                    <button
+                    type="button"
+                    data-bs-target="#carousel"
+                    data-bs-slide-to="2"
+                    aria-current="true"
+                    aria-label="Slide_3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="../img/001.jpg"
+                            alt="Descrição 1"
+                            class="d-block w-100"
+                        >
+                        <div class="carousel-caption">
+                            <h4>Primeiro Slide</h4>
+                            <p>alguma descrição</p>
                         </div>
                     </div>
-                    <button
-                        class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+
+                    <div class="carousel-item">
+                        <img
+                            src="../img/002.jpg"
+                            alt="Descrição 2"
+                            class="d-block w-100"
+                        >
+                        <div class="carousel-caption">
+                            <h4>Segundo Slide</h4>
+                            <p>alguma descrição</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                            src="../img/003.png"
+                            alt="Descrição 3"
+                            class="d-block w-100"
+                        >
+                        <div class="carousel-caption">
+                            <h4>Terceiro Slide</h4>
+                            <p>alguma descrição</p>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+    <!-- close button -->
+    <h1>close button</h1>
+    <div class="container mb-4">
+        <p>
+            <button class="btn-close" type="button" aria-label="close">
+            </button>
+        </p>
+        <hr>
+        <a href="#" class="btn btn-danger">fechar <button class="btn-close" type="button" aria-label="Close"></button></a>
+        <hr>
+        <!-- desabilitado -->
+        <h6>desabilitado:</h6>
+        <p>
+            <button class="btn-close" type="button" aria-label="close" disabled>
+            </button>
+        </p>
+    </div>
+    <hr>
+
+    <!-- colapse -->
+    <h1>collapse</h1>
+    <div class="container mb-4">
+        <button class="btn btn-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
+        aria-expanded="false"
+        aria-controls="collapse">Qual o prazo de entrega do meu cartão?</button>
+        <div class="collapse" id="collapse">
+            <div class="col-12 mt-4">
+                Este é o texto que pode ser exibido ou não dependendo do clique do botão.
+            </div>
+        </div>
+        <button class="btn btn-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+        aria-expanded="false"
+        aria-controls="collapse">Como desbloquear meu novo cartão?</button>
+        <div class="collapse" id="collapse2">
+            <div class="col-12 mt-4">
+                Este é o texto que pode ser exibido ou não dependendo do clique do botão.
+            </div>
+        </div>
+        <button class="btn btn-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+        aria-expanded="false"
+        aria-controls="collapse">Como desbloquear meu novo cartão?</button>
+        <div class="collapse" id="collapse3">
+            <div class="col-12 mt-4">
+                Este é o texto que pode ser exibido ou não dependendo do clique do botão.
+            </div>
+        </div>
+        <button class="btn btn-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+        aria-expanded="false"
+        aria-controls="collapse">Como desbloquear meu novo cartão?</button>
+        <div class="collapse" id="collapse4">
+            <div class="col-12 mt-4">
+                Este é o texto que pode ser exibido ou não dependendo do clique do botão.
+            </div>
+        </div>
+    </div>
+<hr>
+
+    <!-- dropdown -->
+    <h1>Dropdown</h1>
+    <div class="container mb-4">
+        <div class="dropdown mb-4">
+            <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Ir para</a>
+
+            <ul class="dropdown-menu"aria-labelledby="dropdown">
+                <li><a href="#" class="dropdown-item">Televisores</a></li>
+                <li><a href="#" class="dropdown-item">Refrigeradores</a></li>
+                <li><a href="#" class="dropdown-item">Móveis</a></li>
+                <li><a href="#" class="dropdown-item">Eletrônicos</a></li>
+                <li><a href="#" class="dropdown-item">Decoração</a></li>
+                <li><a href="#" class="dropdown-item">Roupas</a></li>
+            </ul>
+        </div>
+        <hr>
+        <!-- a direita -->
+        <h6>para direita:</h6>
+        <div class="dropdown mb-4 dropend">
+            <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown-direita" data-bs-toggle="dropdown" aria-expanded="false">Ir para</a>
+
+            <ul class="dropdown-menu"aria-labelledby="dropdown-direita">
+                <li><a href="#" class="dropdown-item">Televisores</a></li>
+                <li><a href="#" class="dropdown-item">Refrigeradores</a></li>
+                <li><a href="#" class="dropdown-item">Móveis</a></li>
+                <li><a href="#" class="dropdown-item">Eletrônicos</a></li>
+                <li><a href="#" class="dropdown-item">Decoração</a></li>
+                <li><a href="#" class="dropdown-item">Roupas</a></li>
+            </ul>
+        </div>
+    </div>
+
+<hr>
+
+    <!-- moda -->
+    <h1>Modal</h1>
+    <div class="container mb-4">
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal">Excluir item</button>
+    </div>
+    <!-- container-modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hodden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Tem certeza?</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
                     </button>
+                </div>
+                <div class="modal-body">
+                    <p>Exluir o item pode resultar em:</p>
+                    <p> - Perder venda</p>
+                    <p> - Ficar sem estoque</p>
+                    <p> - Sem lista de reserva</p>
+                    <p>Deseja realmente excluir o item?</p>
+                </div>
+                <div class="modal-footer">
                     <button
-                        class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    class="btn btn-secondary"
+                    type="button"
+                    data-bs-dismiss="modal">Voltar</button>
+                    <button class="btn btn-sucess" type="button">Excluir</button>
                 </div>
             </div>
         </div>
-        <hr>
-        
-
-
     </div>
-
-
-
-
-
+<hr>
 </body>
 </html>
