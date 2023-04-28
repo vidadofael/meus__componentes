@@ -14,3 +14,18 @@ body {
 #card-banner {
     width: 600px;
 }
+
+.logo {
+    width: 150px;
+}
+
+@media(max-width: 991px) {
+    .d-flex {
+        width: 85%;
+        margin: 0 auto;
+    }
+}  
+
+li {
+    list-style: none;
+}
